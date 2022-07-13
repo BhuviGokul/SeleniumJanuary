@@ -19,4 +19,24 @@ public class ChangeOddIndexToUpperCase {
 	 * d)within the loop, change the character to uppercase, if the index is odd else don't change
 	  
 	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String test ="changeme";
+		
+		char[] ch1=test.toCharArray();
+		
+		for (int i = 0; i < ch1.length; i++) {
+			if(i%2!=0) {
+				ch1[i]=Character.toUpperCase(ch1[i]);
+				
+			}
+		}
+		for (int i = 0; i < ch1.length; i++) {
+			System.out.println(ch1[i]);
+		}
+		
+	}
+
+	
 }
